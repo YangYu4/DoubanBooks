@@ -15,7 +15,7 @@ class CategoryRepository{
         self.app = app
         context = app.persistentContainer.viewContext
     }
-    
+
     func isExists(name:String)throws -> Bool{
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: VMCategory.entityName)
         fetch.predicate = NSPredicate(format: "\(VMCategory.colName)=%@",name)

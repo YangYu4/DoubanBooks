@@ -78,7 +78,6 @@ class Repository<T: DateViwModelDelegate> where T:NSObject{
         }catch {
             throw DateError.deleteEntityError("删除图书失败")
         }
-        
     }
     ///更新
     func update(vm:T)  throws {

@@ -17,6 +17,7 @@ class BookFactory {
         repository = BookRepository(app)
     }
     
+    
     func addBook(book:VMBook) -> (Bool,String?) {
         do {
             if try repository.isExists(book.title!){
